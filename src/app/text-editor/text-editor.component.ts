@@ -7,13 +7,20 @@ import {
   ViewChild,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { ButtonModule } from 'primeng/button';
 import { Editor, EditorModule } from 'primeng/editor';
 
 @Component({
   selector: 'nat-text-editor',
   standalone: true,
-  imports: [CommonModule, FormsModule, EditorModule, ButtonModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    EditorModule,
+    ButtonModule,
+    BrowserModule,
+  ],
   templateUrl: './text-editor.component.html',
   styleUrl: './text-editor.component.scss',
 })

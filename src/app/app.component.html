@@ -2,6 +2,22 @@
 
 <h1 class="text-3xl font-bold text-red-600 underline">Hello world!</h1>
 
-<nat-text-editor
+<!-- <nat-text-editor
   (clickReadmoreBtn)="clickReadmoreBtn($event)"
-></nat-text-editor>
+></nat-text-editor> -->
+
+<div class="card">
+  <p-editor [(ngModel)]="text" [style]="{ height: '320px' }">
+    <ng-template pTemplate="header">
+      <span class="ql-formats">
+        <button type="button" class="ql-bold" aria-label="Bold"></button>
+        <button type="button" class="ql-italic" aria-label="Italic"></button>
+        <button
+          type="button"
+          class="ql-underline"
+          aria-label="Underline"
+        ></button>
+      </span>
+    </ng-template>
+  </p-editor>
+</div>

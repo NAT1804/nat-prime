@@ -23,6 +23,9 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'nat-prime';
 
+  text: string =
+    '<div>Hello World!</div><div>PrimeNG <b>Editor</b> Rocks</div><div><br></div>';
+
   clickReadmoreBtn($event: any) {
     console.log($event);
   }
